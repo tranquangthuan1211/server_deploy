@@ -1,8 +1,7 @@
 const Login = require ('../../Model/logins');
-const { use } = require('../../route/register');
 class HomeController {
     index (req,res) {
-        res.json("hel")
+        res.send('hello')
     }
     handleLogin(req,res) {
         let email = req.body.email;
